@@ -23,15 +23,16 @@ body {
     position: relative;
 }
 
-/* Anime Background */
-body::before {
-    content: "";
+/* 🎥 Video Background */
+video.bg-video {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background: url("https://images.unsplash.com/photo-1614850715649-1d0106293bd1?q=80&w=1200") center/cover no-repeat;
-    opacity: 0.25;
+    object-fit: cover;
     z-index: -2;
+    opacity: 0.25;
 }
 
 /* 3D Gradient Animation */
@@ -139,6 +140,11 @@ footer {
 
 <body>
 
+<!-- 🎥 Background Video -->
+<video autoplay muted loop class="bg-video">
+    <source src="https://files.catbox.moe/a8lrw5.mp4" type="video/mp4">
+</video>
+
 <!-- Floating Elements -->
 <span></span>
 <span></span>
@@ -148,14 +154,14 @@ footer {
     <h1>💻 J Hacking Tools Hub 🚀</h1>
     <p>🔐 Ethical Hacking | Cyber Security | Learning Resources</p>
 
-    <a href="https://whatsapp.com/channel/0029VbCJTOmL2AU5StPNgU02" class="btn">📱 WhatsApp</a>
-    <a href="https://t.me/Jb_papa71" class="btn">📢 Telegram</a>
+    <a href="https://wa.me/YOURNUMBER" class="btn">📱 WhatsApp</a>
+    <a href="https://t.me/YOURUSERNAME" class="btn">📢 Telegram</a>
 </header>
 
 <div class="toolbox">
     <h2>🎁 Tool Box</h2>
     <p>Access useful ethical cybersecurity tools</p>
-    <a href="https://hub.faizankhichi.me/t?id=908876" class="btn">⚡ Open Tool box</a>
+    <a href="https://example.com" class="btn">⚡ Open Tool</a>
 </div>
 
 <div class="ai-box">
